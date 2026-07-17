@@ -64,7 +64,7 @@ def total_contributions(acc_date):
             }
         }
     }'''
-    start = acc_date
+    start = acc_date.replace(tzinfo=datetime.timezone.utc) if acc_date.tzinfo is None else acc_date
     now = datetime.datetime.now(datetime.timezone.utc)
     total = 0
     while start < now:
