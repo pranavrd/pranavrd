@@ -47,26 +47,24 @@ text, tspan {white-space: pre;}
 
   <!-- Right: info panel -->
   <text x="540" y="24">
-    <tspan class="header">pranavrd@github</tspan>
-    <tspan x="540" y="44" class="cc">-----------------------------------</tspan>
+    <tspan x="540" y="44" class="header" fill="#ffffff">- pranavrd@github --------------------------------------------------</tspan>
 
-    <tspan x="540" y="68" class="key">OS</tspan><tspan class="cc">: ................................ </tspan><tspan class="value">macOS, Linux (Manjaro KDE)</tspan>
-    <tspan x="540" y="90" class="key">Shell</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">zsh 5.9</tspan>
+    <tspan x="540" y="68" class="key">OS</tspan><tspan class="cc">: ..................................... </tspan><tspan class="value">macOS, Linux (Manjaro KDE)</tspan>
+    <tspan x="540" y="90" class="key">Shell</tspan><tspan class="cc">: ......................................................</tspan><tspan class="value">zsh 5.9</tspan>
     <tspan x="540" y="112" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">calculating...</tspan>
-    <tspan x="540" y="134" class="key">Host</tspan><tspan class="cc">: .............................. </tspan><tspan class="value">Seattle, WA</tspan>
-    <tspan x="540" y="156" class="key">Kernel</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">Java 17 / Python 3.11</tspan>
-    <tspan x="540" y="178" class="key">IDE</tspan><tspan class="cc">: ............................... </tspan><tspan class="value">IntelliJ, VS Code</tspan>
+    <tspan x="540" y="134" class="key">Host</tspan><tspan class="cc">: ..................................................</tspan><tspan class="value">Seattle, WA</tspan>
+    <tspan x="540" y="156" class="key">Kernel</tspan><tspan class="cc">: ......................................</tspan><tspan class="value">Java 17 / Python 3.11</tspan>
+    <tspan x="540" y="178" class="key">IDE</tspan><tspan class="cc">: .............................................</tspan><tspan class="value">IntelliJ, VS Code</tspan>
 
-    <tspan x="540" y="202" class="key">Languages.Primary</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Java, Python</tspan>
-    <tspan x="540" y="224" class="key">Languages.Working</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Go, JavaScript</tspan>
-    <tspan x="540" y="246" class="key">Languages.Learning</tspan><tspan class="cc">: .... </tspan><tspan class="value">C++</tspan>
+    <tspan x="540" y="202" class="key">Languages.Primary</tspan><tspan class="cc">: ................................... </tspan><tspan class="value">Java, Python</tspan>
+    <tspan x="540" y="224" class="key">Languages.Working</tspan><tspan class="cc">: ................................. </tspan><tspan class="value">Go, JavaScript</tspan>
 
-    <tspan x="540" y="278" class="header">- Contact ------------------------------</tspan>
+    <tspan x="540" y="278" class="header" fill="#ffffff">- Contact ---------------------------------------------------------</tspan>
 
-    <tspan x="540" y="302" class="key">Email</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">pranav.doshetty@gmail.com</tspan>
-    <tspan x="540" y="324" class="key">LinkedIn</tspan><tspan class="cc">: ......................... </tspan><tspan class="value">linkedin.com/in/pranav-doshetty</tspan>
+    <tspan x="540" y="302" class="key">Email</tspan><tspan class="cc">: ....................................</tspan><tspan class="value">pranav.doshetty@gmail.com</tspan>
+    <tspan x="540" y="324" class="key">LinkedIn</tspan><tspan class="cc">: ...........................</tspan><tspan class="value">linkedin.com/in/pranav-doshetty</tspan>
 
-    <tspan x="540" y="378" class="header">- GitHub Stats -------------------------</tspan>
+    <tspan x="540" y="378" class="header" fill="#ffffff">- GitHub Stats ----------------------------------------------------</tspan>
 
     <tspan x="540" y="402" class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> .... </tspan><tspan class="value" id="repo_data">0</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">0</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ... </tspan><tspan class="value" id="star_data">0</tspan>
 
