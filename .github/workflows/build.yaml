@@ -31,6 +31,7 @@ jobs:
           USER_NAME: pranavrd
         run: python today.py
       - name: Commit
+        if: always()
         run: |-
           git add .
           git diff
