@@ -1,66 +1,73 @@
-<svg width="960" height="500" viewBox="0 0 960 500" xmlns="http://www.w3.org/2000/svg">
+<svg width="1040" height="620" viewBox="0 0 1040 620" xmlns="http://www.w3.org/2000/svg">
   <style>
     .bg { fill: #0d1117; }
-    .ascii { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #58a6ff; }
-    .key { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #7ee787; }
-    .cc { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #6e7681; }
-    .value { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #c9d1d9; }
-    .header { font-family: 'Courier New', Courier, monospace; font-size: 14px; fill: #f0f6fc; font-weight: bold; }
+    .ascii { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 14px; fill: #58a6ff; }
+    .key { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 15px; fill: #7ee787; }
+    .cc { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 15px; fill: #6e7681; }
+    .value { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 15px; fill: #c9d1d9; }
+    .header { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 16px; fill: #f0f6fc; font-weight: bold; }
   </style>
 
-  <rect class="bg" width="960" height="500" rx="8"/>
+  <rect class="bg" width="1040" height="620" rx="8"/>
 
   <!-- Left: ASCII art -->
   <text class="ascii">
-<tspan x="20" y="20" xml:space="preserve">                        .                         </tspan>
-<tspan x="20" y="38" xml:space="preserve">                 &#x27;....,&#x27;,,&#x27;...                    </tspan>
-<tspan x="20" y="56" xml:space="preserve">               ........;,,........                </tspan>
-<tspan x="20" y="74" xml:space="preserve">             . .........,,&#x27;.......&#x27;.              </tspan>
-<tspan x="20" y="92" xml:space="preserve">             .   .....&#x27;;::;;;.&#x27;&#x27;.&#x27;&#x27;,.             </tspan>
-<tspan x="20" y="110" xml:space="preserve">            ..    ....,,,;loo:l:.,,..             </tspan>
-<tspan x="20" y="128" xml:space="preserve">             .......&#x27;..&#x27;;ododdxl...,.             </tspan>
-<tspan x="20" y="146" xml:space="preserve">               .&#x27;...&#x27;,:c;,.,:lxx;.,.              </tspan>
-<tspan x="20" y="164" xml:space="preserve">               ,&#x27;....&#x27;xOl;;:loxkx&#x27;d&#x27;              </tspan>
-<tspan x="20" y="182" xml:space="preserve">              .;;ccl:cOXK000XXKOklO:              </tspan>
-<tspan x="20" y="200" xml:space="preserve">              &#x27;,:oxc;:x0kkocdkOkoc0c              </tspan>
-<tspan x="20" y="218" xml:space="preserve">              ..,::.. ...;c:cdoc&#x27;                 </tspan>
-<tspan x="20" y="236" xml:space="preserve">                 &#x27;....;:ccc;,l&#x27;.                  </tspan>
-<tspan x="20" y="254" xml:space="preserve">                  ....&#x27;&#x27;&#x27;:c,&#x27;..&#x27;                  </tspan>
-<tspan x="20" y="272" xml:space="preserve">                 ..  ..&#x27;.&#x27;&#x27;...cxk.                </tspan>
-<tspan x="20" y="290" xml:space="preserve">              .........  ...:xOKX0;,&#x27;.            </tspan>
-<tspan x="20" y="308" xml:space="preserve">           l,    ..,;&#x27;&#x27;..&#x27;:xOKKXKo,,,&#x27;,&#x27;&#x27;&#x27;..      </tspan>
-<tspan x="20" y="326" xml:space="preserve">          dx   .&#x27;..&#x27;:;;lok00KKXKx&#x27;&#x27;&#x27;,lddxxxdo;..  </tspan>
-<tspan x="20" y="344" xml:space="preserve">        .kk.  co,&#x27;&#x27;,;ldkkO0KKKKO,..&#x27;ldoddddxxxd:;.</tspan>
-<tspan x="20" y="362" xml:space="preserve">       .0X..  ;0xc,cdkkkO0KKKKd....looooooodd:..&#x27;&#x27;</tspan>
-<tspan x="20" y="380" xml:space="preserve"> .     xWd...,;:oOO0K00KKKKKKl... .lollllooo&#x27;.&#x27;..&#x27;</tspan>
-<tspan x="20" y="398" xml:space="preserve">....  ,WX&#x27;&#x27;;;c:dc,c0KKKKK0KKc.....;llcccclo,......</tspan>
-<tspan x="20" y="416" xml:space="preserve">.... .OWl&#x27;:Kk0c0XKkO0KK00KKl...cKl:cccc:ccl.......</tspan>
-<tspan x="20" y="434" xml:space="preserve">...  &#x27;WK.&#x27;0K00cOkOK0KKO000o..lKMW;;cc:::::;  . ...</tspan>
-<tspan x="20" y="452" xml:space="preserve"> ..  oWo&#x27;:XKKOcOlxOKKO000O..dWMW; &#x27;c:::;;:.   ....</tspan>
-<tspan x="20" y="470" xml:space="preserve"></tspan>
+<tspan x="20" y="22" xml:space="preserve">                        .                         </tspan>
+<tspan x="20" y="42" xml:space="preserve">                 &#x27;....,&#x27;,,&#x27;...                    </tspan>
+<tspan x="20" y="62" xml:space="preserve">               ........;,,........                </tspan>
+<tspan x="20" y="82" xml:space="preserve">             . .........,,&#x27;.......&#x27;.              </tspan>
+<tspan x="20" y="102" xml:space="preserve">             .   .....&#x27;;::;;;.&#x27;&#x27;.&#x27;&#x27;,.             </tspan>
+<tspan x="20" y="122" xml:space="preserve">            ..    ....,,,;loo:l:.,,..             </tspan>
+<tspan x="20" y="142" xml:space="preserve">             .......&#x27;..&#x27;;ododdxl...,.             </tspan>
+<tspan x="20" y="162" xml:space="preserve">               .&#x27;...&#x27;,:c;,.,:lxx;.,.              </tspan>
+<tspan x="20" y="182" xml:space="preserve">               ,&#x27;....&#x27;xOl;;:loxkx&#x27;d&#x27;              </tspan>
+<tspan x="20" y="202" xml:space="preserve">              .;;ccl:cOXK000XXKOklO:              </tspan>
+<tspan x="20" y="222" xml:space="preserve">              &#x27;,:oxc;:x0kkocdkOkoc0c              </tspan>
+<tspan x="20" y="242" xml:space="preserve">              ..,::.. ...;c:cdoc&#x27;                 </tspan>
+<tspan x="20" y="262" xml:space="preserve">                 &#x27;....;:ccc;,l&#x27;.                  </tspan>
+<tspan x="20" y="282" xml:space="preserve">                  ....&#x27;&#x27;&#x27;:c,&#x27;..&#x27;                  </tspan>
+<tspan x="20" y="302" xml:space="preserve">                 ..  ..&#x27;.&#x27;&#x27;...cxk.                </tspan>
+<tspan x="20" y="322" xml:space="preserve">              .........  ...:xOKX0;,&#x27;.            </tspan>
+<tspan x="20" y="342" xml:space="preserve">           l,    ..,;&#x27;&#x27;..&#x27;:xOKKXKo,,,&#x27;,&#x27;&#x27;&#x27;..      </tspan>
+<tspan x="20" y="362" xml:space="preserve">          dx   .&#x27;..&#x27;:;;lok00KKXKx&#x27;&#x27;&#x27;,lddxxxdo;..  </tspan>
+<tspan x="20" y="382" xml:space="preserve">        .kk.  co,&#x27;&#x27;,;ldkkO0KKKKO,..&#x27;ldoddddxxxd:;.</tspan>
+<tspan x="20" y="402" xml:space="preserve">       .0X..  ;0xc,cdkkkO0KKKKd....looooooodd:..&#x27;&#x27;</tspan>
+<tspan x="20" y="422" xml:space="preserve"> .     xWd...,;:oOO0K00KKKKKKl... .lollllooo&#x27;.&#x27;..&#x27;</tspan>
+<tspan x="20" y="442" xml:space="preserve">....  ,WX&#x27;&#x27;;;c:dc,c0KKKKK0KKc.....;llcccclo,......</tspan>
+<tspan x="20" y="462" xml:space="preserve">.... .OWl&#x27;:Kk0c0XKkO0KK00KKl...cKl:cccc:ccl.......</tspan>
+<tspan x="20" y="482" xml:space="preserve">...  &#x27;WK.&#x27;0K00cOkOK0KKO000o..lKMW;;cc:::::;  . ...</tspan>
+<tspan x="20" y="502" xml:space="preserve"> ..  oWo&#x27;:XKKOcOlxOKKO000O..dWMW; &#x27;c:::;;:.   ....</tspan>
+<tspan x="20" y="522" xml:space="preserve"></tspan>
   </text>
 
   <!-- Right: info panel -->
-  <text x="470" y="20">
+  <text x="490" y="24">
     <tspan class="header">pranavrd@github</tspan>
-    <tspan x="470" y="38" class="cc">-----------------------------------</tspan>
+    <tspan x="490" y="44" class="cc">-----------------------------------</tspan>
 
-    <tspan x="470" y="60" class="key">OS</tspan><tspan class="cc">: ................................ </tspan><tspan class="value">macOS, Linux (Manjaro KDE)</tspan>
-    <tspan x="470" y="80" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">calculating...</tspan>
-    <tspan x="470" y="100" class="key">Host</tspan><tspan class="cc">: .............................. </tspan><tspan class="value">Seattle, WA</tspan>
-    <tspan x="470" y="120" class="key">Kernel</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">Java 17 / Python 3.11</tspan>
-    <tspan x="470" y="140" class="key">IDE</tspan><tspan class="cc">: ............................... </tspan><tspan class="value">IntelliJ, VS Code</tspan>
+    <tspan x="490" y="68" class="key">OS</tspan><tspan class="cc">: ................................ </tspan><tspan class="value">macOS, Linux (Manjaro KDE)</tspan>
+    <tspan x="490" y="90" class="key">Shell</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">zsh 5.9</tspan>
+    <tspan x="490" y="112" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">calculating...</tspan>
+    <tspan x="490" y="134" class="key">Host</tspan><tspan class="cc">: .............................. </tspan><tspan class="value">Seattle, WA</tspan>
+    <tspan x="490" y="156" class="key">Kernel</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">Java 17 / Python 3.11</tspan>
+    <tspan x="490" y="178" class="key">IDE</tspan><tspan class="cc">: ............................... </tspan><tspan class="value">IntelliJ, VS Code</tspan>
 
-    <tspan x="470" y="170" class="key">Languages.Primary</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Java, Python</tspan>
-    <tspan x="470" y="190" class="key">Languages.Working</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Go, JavaScript</tspan>
-    <tspan x="470" y="210" class="key">Languages.Learning</tspan><tspan class="cc">: .... </tspan><tspan class="value">C++</tspan>
+    <tspan x="490" y="202" class="key">Languages.Primary</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Java, Python</tspan>
+    <tspan x="490" y="224" class="key">Languages.Working</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Go, JavaScript</tspan>
+    <tspan x="490" y="246" class="key">Languages.Learning</tspan><tspan class="cc">: .... </tspan><tspan class="value">C++</tspan>
 
-    <tspan x="470" y="240" class="header">- GitHub Stats ------------------------</tspan>
+    <tspan x="490" y="278" class="header">- Contact ------------------------------</tspan>
 
-    <tspan x="470" y="262" class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> .... </tspan><tspan class="value" id="repo_data">0</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">0</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ... </tspan><tspan class="value" id="star_data">0</tspan>
+    <tspan x="490" y="302" class="key">Email</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">[YOUR_EMAIL]</tspan>
+    <tspan x="490" y="324" class="key">LinkedIn</tspan><tspan class="cc">: ......................... </tspan><tspan class="value">[YOUR_LINKEDIN]</tspan>
+    <tspan x="490" y="346" class="key">Website</tspan><tspan class="cc">: .......................... </tspan><tspan class="value">[YOUR_WEBSITE]</tspan>
 
-    <tspan x="470" y="284" class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> .. </tspan><tspan class="value" id="commit_data">0</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> .. </tspan><tspan class="value" id="follower_data">0</tspan>
+    <tspan x="490" y="378" class="header">- GitHub Stats -------------------------</tspan>
 
-    <tspan x="470" y="306" class="key">Lines of Code on GitHub</tspan><tspan class="cc" id="loc_data_dots">: </tspan><tspan class="value" id="loc_data">0</tspan><tspan class="cc"> ( </tspan><tspan class="value" id="loc_add" fill="#3fb950">0++</tspan><tspan class="cc">, </tspan><tspan class="value" id="loc_del" fill="#f85149">0--</tspan><tspan class="cc"> )</tspan>
+    <tspan x="490" y="402" class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> .... </tspan><tspan class="value" id="repo_data">0</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">0</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ... </tspan><tspan class="value" id="star_data">0</tspan>
+
+    <tspan x="490" y="428" class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> .. </tspan><tspan class="value" id="commit_data">0</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> .. </tspan><tspan class="value" id="follower_data">0</tspan>
+
+    <tspan x="490" y="454" class="key">Lines of Code on GitHub</tspan><tspan class="cc" id="loc_data_dots">: </tspan><tspan class="value" id="loc_data">0</tspan><tspan class="cc"> ( </tspan><tspan class="value" id="loc_add" fill="#3fb950">0++</tspan><tspan class="cc">, </tspan><tspan class="value" id="loc_del" fill="#f85149">0--</tspan><tspan class="cc"> )</tspan>
   </text>
 </svg>

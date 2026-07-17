@@ -12,7 +12,7 @@ import hashlib
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
 HEADERS = {'authorization': 'token '+ os.environ['METRICS_TOKEN']}
 USER_NAME = os.environ['USER_NAME'] # 'pranavrd'
-QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
+QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'total_contributions': 0, 'loc_query': 0}
 
 def daily_readme(birthday):
     """
@@ -46,11 +46,14 @@ def simple_request(func_name, query, variables):
         return request
     raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
 
-def graph_commits(start_date, end_date):
+def total_contributions(acc_date):
     """
-    Uses GitHub's GraphQL v4 API to return my total commit count
+    Uses GitHub's GraphQL v4 API to return total contributions: commits, pull requests,
+    issues, and reviews combined (whatever GitHub itself counts on the contribution graph).
+    contributionsCollection only accepts a date range of at most one year, so this loops
+    year-by-year from account creation to today and sums each year's total.
     """
-    query_count('graph_commits')
+    query_count('total_contributions')
     query = '''
     query($start_date: DateTime!, $end_date: DateTime!, $login: String!) {
         user(login: $login) {
@@ -61,9 +64,20 @@ def graph_commits(start_date, end_date):
             }
         }
     }'''
-    variables = {'start_date': start_date,'end_date': end_date, 'login': USER_NAME}
-    request = simple_request(graph_commits.__name__, query, variables)
-    return int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
+    start = acc_date
+    now = datetime.datetime.now(datetime.timezone.utc)
+    total = 0
+    while start < now:
+        end = min(start + relativedelta.relativedelta(years=1), now)
+        variables = {
+            'start_date': start.strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'end_date': end.strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'login': USER_NAME
+        }
+        request = simple_request(total_contributions.__name__, query, variables)
+        total += int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
+        start = end
+    return total
 
 def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del_loc=0):
     """
@@ -416,7 +430,7 @@ if __name__ == '__main__':
 
     total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
-    commit_data, commit_time = perf_counter(commit_counter, 7)
+    commit_data, commit_time = perf_counter(total_contributions, acc_date_parsed)
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
     repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
     contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
