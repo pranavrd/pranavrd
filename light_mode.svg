@@ -1,17 +1,22 @@
-<svg width="1040" height="620" viewBox="0 0 1040 620" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .bg { fill: #ffffff; }
-    .ascii { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 14px; fill: #0969da; }
-    .key { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 15px; fill: #1a7f37; }
-    .cc { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 15px; fill: #8c959f; }
-    .value { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 15px; fill: #24292f; }
-    .header { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace; font-size: 16px; fill: #24292f; font-weight: bold; }
-  </style>
-
-  <rect class="bg" width="1040" height="620" rx="8"/>
-
-  <!-- Left: ASCII art -->
-  <text class="ascii">
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1200px" height="530px" font-size="16px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold');
+font-family: 'ConsolasFallback';
+font-display: swap;
+-webkit-size-adjust: 75%;
+size-adjust: 75%;
+}
+.key {fill: #953800;}
+.value {fill: #0a3069;}
+.addColor {fill: #1a7f37;}
+.delColor {fill: #cf222e;}
+.cc {fill: #c2cfde;}
+text, tspan {white-space: pre;}
+</style>
+<rect width="1200px" height="530px" fill="#f6f8fa" rx="15"/>
+<text x="20" y="30" fill="#24292f" class="ascii">
 <tspan x="20" y="22" xml:space="preserve">                        .                         </tspan>
 <tspan x="20" y="42" xml:space="preserve">                 &#x27;....,&#x27;,,&#x27;...                    </tspan>
 <tspan x="20" y="62" xml:space="preserve">               ........;,,........                </tspan>
@@ -41,33 +46,32 @@
   </text>
 
   <!-- Right: info panel -->
-  <text x="490" y="24">
+  <text x="540" y="24">
     <tspan class="header">pranavrd@github</tspan>
-    <tspan x="490" y="44" class="cc">-----------------------------------</tspan>
+    <tspan x="540" y="44" class="cc">-----------------------------------</tspan>
 
-    <tspan x="490" y="68" class="key">OS</tspan><tspan class="cc">: ................................ </tspan><tspan class="value">macOS, Linux (Manjaro KDE)</tspan>
-    <tspan x="490" y="90" class="key">Shell</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">zsh 5.9</tspan>
-    <tspan x="490" y="112" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">calculating...</tspan>
-    <tspan x="490" y="134" class="key">Host</tspan><tspan class="cc">: .............................. </tspan><tspan class="value">Seattle, WA</tspan>
-    <tspan x="490" y="156" class="key">Kernel</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">Java 17 / Python 3.11</tspan>
-    <tspan x="490" y="178" class="key">IDE</tspan><tspan class="cc">: ............................... </tspan><tspan class="value">IntelliJ, VS Code</tspan>
+    <tspan x="540" y="68" class="key">OS</tspan><tspan class="cc">: ................................ </tspan><tspan class="value">macOS, Linux (Manjaro KDE)</tspan>
+    <tspan x="540" y="90" class="key">Shell</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">zsh 5.9</tspan>
+    <tspan x="540" y="112" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">calculating...</tspan>
+    <tspan x="540" y="134" class="key">Host</tspan><tspan class="cc">: .............................. </tspan><tspan class="value">Seattle, WA</tspan>
+    <tspan x="540" y="156" class="key">Kernel</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">Java 17 / Python 3.11</tspan>
+    <tspan x="540" y="178" class="key">IDE</tspan><tspan class="cc">: ............................... </tspan><tspan class="value">IntelliJ, VS Code</tspan>
 
-    <tspan x="490" y="202" class="key">Languages.Primary</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Java, Python</tspan>
-    <tspan x="490" y="224" class="key">Languages.Working</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Go, JavaScript</tspan>
-    <tspan x="490" y="246" class="key">Languages.Learning</tspan><tspan class="cc">: .... </tspan><tspan class="value">C++</tspan>
+    <tspan x="540" y="202" class="key">Languages.Primary</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Java, Python</tspan>
+    <tspan x="540" y="224" class="key">Languages.Working</tspan><tspan class="cc">: ..... </tspan><tspan class="value">Go, JavaScript</tspan>
+    <tspan x="540" y="246" class="key">Languages.Learning</tspan><tspan class="cc">: .... </tspan><tspan class="value">C++</tspan>
 
-    <tspan x="490" y="278" class="header">- Contact ------------------------------</tspan>
+    <tspan x="540" y="278" class="header">- Contact ------------------------------</tspan>
 
-    <tspan x="490" y="302" class="key">Email</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">[YOUR_EMAIL]</tspan>
-    <tspan x="490" y="324" class="key">LinkedIn</tspan><tspan class="cc">: ......................... </tspan><tspan class="value">[YOUR_LINKEDIN]</tspan>
-    <tspan x="490" y="346" class="key">Website</tspan><tspan class="cc">: .......................... </tspan><tspan class="value">[YOUR_WEBSITE]</tspan>
+    <tspan x="540" y="302" class="key">Email</tspan><tspan class="cc">: ............................ </tspan><tspan class="value">pranav.doshetty@gmail.com</tspan>
+    <tspan x="540" y="324" class="key">LinkedIn</tspan><tspan class="cc">: ......................... </tspan><tspan class="value">linkedin.com/in/pranav-doshetty</tspan>
 
-    <tspan x="490" y="378" class="header">- GitHub Stats -------------------------</tspan>
+    <tspan x="540" y="378" class="header">- GitHub Stats -------------------------</tspan>
 
-    <tspan x="490" y="402" class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> .... </tspan><tspan class="value" id="repo_data">0</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">0</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ... </tspan><tspan class="value" id="star_data">0</tspan>
+    <tspan x="540" y="402" class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> .... </tspan><tspan class="value" id="repo_data">0</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">0</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ... </tspan><tspan class="value" id="star_data">0</tspan>
 
-    <tspan x="490" y="428" class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> .. </tspan><tspan class="value" id="commit_data">0</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> .. </tspan><tspan class="value" id="follower_data">0</tspan>
+    <tspan x="540" y="428" class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> .. </tspan><tspan class="value" id="commit_data">0</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> .. </tspan><tspan class="value" id="follower_data">0</tspan>
 
-    <tspan x="490" y="454" class="key">Lines of Code on GitHub</tspan><tspan class="cc" id="loc_data_dots">: </tspan><tspan class="value" id="loc_data">0</tspan><tspan class="cc"> ( </tspan><tspan class="value" id="loc_add" fill="#1a7f37">0++</tspan><tspan class="cc">, </tspan><tspan class="value" id="loc_del" fill="#cf222e">0--</tspan><tspan class="cc"> )</tspan>
+    <tspan x="540" y="454" class="key">Lines of Code on GitHub</tspan><tspan class="cc" id="loc_data_dots">: </tspan><tspan class="value" id="loc_data">0</tspan><tspan class="cc"> ( </tspan><tspan class="value" id="loc_add" fill="#1a7f37">0++</tspan><tspan class="cc">, </tspan><tspan class="value" id="loc_del" fill="#cf222e">0--</tspan><tspan class="cc"> )</tspan>
   </text>
 </svg>
