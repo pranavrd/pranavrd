@@ -109,11 +109,14 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(graph_repos_stars.__name__, query, variables)
     if request.status_code == 200:
+        repos = request.json()['data']['user']['repositories']
         if count_type == 'repos':
-            return request.json()['data']['user']['repositories']['totalCount']
+            return repos['totalCount']
         elif count_type == 'stars':
-            return stars_counter(request.json()['data']['user']['repositories']['edges'])
-
+            add_loc += stars_counter(repos['edges'])
+            if repos['pageInfo']['hasNextPage']:
+                return graph_repos_stars(count_type, owner_affiliation, repos['pageInfo']['endCursor'], add_loc)
+            return add_loc
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
     """
     Uses GitHub's GraphQL v4 API and cursor pagination to fetch 100 commits from a repository at a time
@@ -292,10 +295,15 @@ def force_close_file(data, cache_comment):
 
 def stars_counter(data):
     """
-    Count total stars in repositories owned by me
+    Count total stars in repositories owned by me. Skips null nodes — GitHub can return
+    a null repository node for repos the token can no longer fully resolve (e.g. transferred,
+    or an access edge case), so we don't crash the whole run over one bad entry.
     """
     total_stars = 0
-    for node in data: total_stars += node['node']['stargazers']['totalCount']
+    for node in data:
+        if node['node'] is None:
+            continue
+        total_stars += node['node']['stargazers']['totalCount']
     return total_stars
 
 def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
