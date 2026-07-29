@@ -18,31 +18,31 @@ text, tspan {white-space: pre;}
 <rect width="1200px" height="530px" fill="#161b22" rx="20"/>
 <text x="20" y="30" fill="#c9d1d9" class="ascii">
 <tspan x="20" y="22" xml:space="preserve">                        .                         </tspan>
-<tspan x="20" y="42" xml:space="preserve">                 &#x27;....,&#x27;,,&#x27;...                    </tspan>
+<tspan x="20" y="42" xml:space="preserve">                 '....,',,'...                    </tspan>
 <tspan x="20" y="62" xml:space="preserve">               ........;,,........                </tspan>
-<tspan x="20" y="82" xml:space="preserve">             . .........,,&#x27;.......&#x27;.              </tspan>
-<tspan x="20" y="102" xml:space="preserve">             .   .....&#x27;;::;;;.&#x27;&#x27;.&#x27;&#x27;,.             </tspan>
+<tspan x="20" y="82" xml:space="preserve">             . .........,,'.......'.              </tspan>
+<tspan x="20" y="102" xml:space="preserve">             .   .....';::;;;.''.'',.             </tspan>
 <tspan x="20" y="122" xml:space="preserve">            ..    ....,,,;loo:l:.,,..             </tspan>
-<tspan x="20" y="142" xml:space="preserve">             .......&#x27;..&#x27;;ododdxl...,.             </tspan>
-<tspan x="20" y="162" xml:space="preserve">               .&#x27;...&#x27;,:c;,.,:lxx;.,.              </tspan>
-<tspan x="20" y="182" xml:space="preserve">               ,&#x27;....&#x27;xOl;;:loxkx&#x27;d&#x27;              </tspan>
+<tspan x="20" y="142" xml:space="preserve">             .......'..';ododdxl...,.             </tspan>
+<tspan x="20" y="162" xml:space="preserve">               .'...',:c;,.,:lxx;.,.              </tspan>
+<tspan x="20" y="182" xml:space="preserve">               ,'....'xOl;;:loxkx'd'              </tspan>
 <tspan x="20" y="202" xml:space="preserve">              .;;ccl:cOXK000XXKOklO:              </tspan>
-<tspan x="20" y="222" xml:space="preserve">              &#x27;,:oxc;:x0kkocdkOkoc0c              </tspan>
-<tspan x="20" y="242" xml:space="preserve">              ..,::.. ...;c:cdoc&#x27;                 </tspan>
-<tspan x="20" y="262" xml:space="preserve">                 &#x27;....;:ccc;,l&#x27;.                  </tspan>
-<tspan x="20" y="282" xml:space="preserve">                  ....&#x27;&#x27;&#x27;:c,&#x27;..&#x27;                  </tspan>
-<tspan x="20" y="302" xml:space="preserve">                 ..  ..&#x27;.&#x27;&#x27;...cxk.                </tspan>
-<tspan x="20" y="322" xml:space="preserve">              .........  ...:xOKX0;,&#x27;.            </tspan>
-<tspan x="20" y="342" xml:space="preserve">           l,    ..,;&#x27;&#x27;..&#x27;:xOKKXKo,,,&#x27;,&#x27;&#x27;&#x27;..      </tspan>
-<tspan x="20" y="362" xml:space="preserve">          dx   .&#x27;..&#x27;:;;lok00KKXKx&#x27;&#x27;&#x27;,lddxxxdo;..  </tspan>
-<tspan x="20" y="382" xml:space="preserve">        .kk.  co,&#x27;&#x27;,;ldkkO0KKKKO,..&#x27;ldoddddxxxd:;.</tspan>
-<tspan x="20" y="402" xml:space="preserve">       .0X..  ;0xc,cdkkkO0KKKKd....looooooodd:..&#x27;&#x27;</tspan>
-<tspan x="20" y="422" xml:space="preserve"> .     xWd...,;:oOO0K00KKKKKKl... .lollllooo&#x27;.&#x27;..&#x27;</tspan>
-<tspan x="20" y="442" xml:space="preserve">....  ,WX&#x27;&#x27;;;c:dc,c0KKKKK0KKc.....;llcccclo,......</tspan>
-<tspan x="20" y="462" xml:space="preserve">.... .OWl&#x27;:Kk0c0XKkO0KK00KKl...cKl:cccc:ccl.......</tspan>
-<tspan x="20" y="482" xml:space="preserve">...  &#x27;WK.&#x27;0K00cOkOK0KKO000o..lKMW;;cc:::::;  . ...</tspan>
-<tspan x="20" y="502" xml:space="preserve"> ..  oWo&#x27;:XKKOcOlxOKKO000O..dWMW; &#x27;c:::;;:.   ....</tspan>
-<tspan x="20" y="522" xml:space="preserve"></tspan>
+<tspan x="20" y="222" xml:space="preserve">              ',:oxc;:x0kkocdkOkoc0c              </tspan>
+<tspan x="20" y="242" xml:space="preserve">              ..,::.. ...;c:cdoc'                 </tspan>
+<tspan x="20" y="262" xml:space="preserve">                 '....;:ccc;,l'.                  </tspan>
+<tspan x="20" y="282" xml:space="preserve">                  ....''':c,'..'                  </tspan>
+<tspan x="20" y="302" xml:space="preserve">                 ..  ..'.''...cxk.                </tspan>
+<tspan x="20" y="322" xml:space="preserve">              .........  ...:xOKX0;,'.            </tspan>
+<tspan x="20" y="342" xml:space="preserve">           l,    ..,;''..':xOKKXKo,,,','''..      </tspan>
+<tspan x="20" y="362" xml:space="preserve">          dx   .'..':;;lok00KKXKx''',lddxxxdo;..  </tspan>
+<tspan x="20" y="382" xml:space="preserve">        .kk.  co,'',;ldkkO0KKKKO,..'ldoddddxxxd:;.</tspan>
+<tspan x="20" y="402" xml:space="preserve">       .0X..  ;0xc,cdkkkO0KKKKd....looooooodd:..''</tspan>
+<tspan x="20" y="422" xml:space="preserve"> .     xWd...,;:oOO0K00KKKKKKl... .lollllooo'.'..'</tspan>
+<tspan x="20" y="442" xml:space="preserve">....  ,WX'';;c:dc,c0KKKKK0KKc.....;llcccclo,......</tspan>
+<tspan x="20" y="462" xml:space="preserve">.... .OWl':Kk0c0XKkO0KK00KKl...cKl:cccc:ccl.......</tspan>
+<tspan x="20" y="482" xml:space="preserve">...  'WK.'0K00cOkOK0KKO000o..lKMW;;cc:::::;  . ...</tspan>
+<tspan x="20" y="502" xml:space="preserve"> ..  oWo':XKKOcOlxOKKO000O..dWMW; 'c:::;;:.   ....</tspan>
+<tspan x="20" y="522" xml:space="preserve"/>
   </text>
 
   <!-- Right: info panel -->
@@ -51,7 +51,7 @@ text, tspan {white-space: pre;}
 
     <tspan x="540" y="68" class="key">OS</tspan><tspan class="cc">: ..................................... </tspan><tspan class="value">macOS, Linux (Manjaro KDE)</tspan>
     <tspan x="540" y="90" class="key">Shell</tspan><tspan class="cc">: ......................................................</tspan><tspan class="value">zsh 5.9</tspan>
-    <tspan x="540" y="112" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">calculating...</tspan>
+    <tspan x="540" y="112" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">8 years, 7 months, 12 days</tspan>
     <tspan x="540" y="134" class="key">Host</tspan><tspan class="cc">: ..................................................</tspan><tspan class="value">Seattle, WA</tspan>
     <tspan x="540" y="156" class="key">Kernel</tspan><tspan class="cc">: ......................................</tspan><tspan class="value">Java 17 / Python 3.11</tspan>
     <tspan x="540" y="178" class="key">IDE</tspan><tspan class="cc">: .............................................</tspan><tspan class="value">IntelliJ, VS Code</tspan>
@@ -66,10 +66,10 @@ text, tspan {white-space: pre;}
 
     <tspan x="540" y="378" class="header" fill="#ffffff">- GitHub Stats ----------------------------------------------------</tspan>
 
-    <tspan x="540" y="402" class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> .... </tspan><tspan class="value" id="repo_data">0</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">0</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ... </tspan><tspan class="value" id="star_data">0</tspan>
+    <tspan x="540" y="402" class="key">Repos</tspan><tspan class="cc" id="repo_data_dots"> .... </tspan><tspan class="value" id="repo_data">29</tspan><tspan class="cc"> {</tspan><tspan class="key">Contributed</tspan><tspan class="cc">: </tspan><tspan class="value" id="contrib_data">32</tspan><tspan class="cc">} | </tspan><tspan class="key">Stars</tspan><tspan class="cc" id="star_data_dots"> ............. </tspan><tspan class="value" id="star_data">0</tspan>
 
-    <tspan x="540" y="428" class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> .. </tspan><tspan class="value" id="commit_data">0</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> .. </tspan><tspan class="value" id="follower_data">0</tspan>
+    <tspan x="540" y="428" class="key">Commits</tspan><tspan class="cc" id="commit_data_dots"> ................... </tspan><tspan class="value" id="commit_data">862</tspan><tspan class="cc"> | </tspan><tspan class="key">Followers</tspan><tspan class="cc" id="follower_data_dots"> ......... </tspan><tspan class="value" id="follower_data">7</tspan>
 
-    <tspan x="540" y="454" class="key">Lines of Code on GitHub</tspan><tspan class="cc" id="loc_data_dots">: </tspan><tspan class="value" id="loc_data">0</tspan><tspan class="cc"> ( </tspan><tspan class="value" id="loc_add" fill="#3fb950">0++</tspan><tspan class="cc">, </tspan><tspan class="value" id="loc_del" fill="#f85149">0--</tspan><tspan class="cc"> )</tspan>
+    <tspan x="540" y="454" class="key">Lines of Code on GitHub</tspan><tspan class="cc" id="loc_data_dots">. </tspan><tspan class="value" id="loc_data">514,200</tspan><tspan class="cc"> ( </tspan><tspan class="value" id="loc_add" fill="#3fb950">665,307</tspan><tspan class="cc">, </tspan><tspan class="value" id="loc_del" fill="#f85149">151,107</tspan><tspan class="cc"> )</tspan>
   </text>
 </svg>
