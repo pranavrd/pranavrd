@@ -51,7 +51,7 @@ text, tspan {white-space: pre;}
 
     <tspan x="540" y="68" class="key">OS</tspan><tspan class="cc">: ......................................</tspan><tspan class="value">macOS, Linux (Manjaro KDE)</tspan>
     <tspan x="540" y="90" class="key">Shell</tspan><tspan class="cc">: ......................................................</tspan><tspan class="value">zsh 5.9</tspan>
-    <tspan x="540" y="112" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">8 years, 8 months, 14 days</tspan>
+    <tspan x="540" y="112" class="key">Uptime</tspan><tspan class="cc" id="age_data_dots"> ........................ </tspan><tspan class="value" id="age_data">8 years, 8 months, 15 days</tspan>
     <tspan x="540" y="134" class="key">Host</tspan><tspan class="cc">: ..................................................</tspan><tspan class="value">Seattle, WA</tspan>
     <tspan x="540" y="156" class="key">Kernel</tspan><tspan class="cc">: ......................................</tspan><tspan class="value">Java 17 / Python 3.11</tspan>
     <tspan x="540" y="178" class="key">IDE</tspan><tspan class="cc">: .............................................</tspan><tspan class="value">IntelliJ, VS Code</tspan>
