@@ -117,6 +117,7 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
             if repos['pageInfo']['hasNextPage']:
                 return graph_repos_stars(count_type, owner_affiliation, repos['pageInfo']['endCursor'], add_loc)
             return add_loc
+
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
     """
     Uses GitHub's GraphQL v4 API and cursor pagination to fetch 100 commits from a repository at a time
@@ -155,7 +156,19 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
         }
     }'''
     variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
-    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS) # I cannot use simple_request(), because I want to save the file before raising Exception
+    if cursor is None:
+        # only print once per repo (on the first page), not once per 100-commit page
+        print(f'  -> walking {owner}/{repo_name}', flush=True)
+    # Retry transient gateway errors (502/503/504) with exponential backoff before giving up.
+    # Big repos time out on GitHub's side intermittently and usually succeed on a retry.
+    request = None
+    for attempt in range(5):
+        request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS) # I cannot use simple_request(), because I want to save the file before raising Exception
+        if request.status_code not in (502, 503, 504):
+            break
+        wait = 2 ** attempt  # 1, 2, 4, 8, 16 seconds
+        print(f'     {request.status_code} on {owner}/{repo_name}, retry {attempt+1}/5 in {wait}s', flush=True)
+        time.sleep(wait)
     if request.status_code == 200:
         if request.json()['data']['repository']['defaultBranchRef'] != None: # Only count commits if repo isn't empty
             return loc_counter_one_repo(owner, repo_name, data, cache_comment, request.json()['data']['repository']['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
@@ -281,6 +294,28 @@ def flush_cache(edges, filename, comment_size):
         f.writelines(data)
         for node in edges:
             f.write(hashlib.sha256(node['node']['nameWithOwner'].encode('utf-8')).hexdigest() + ' 0 0 0 0\n')
+
+def add_archive():
+    """
+    Several repositories I have contributed to have since been deleted.
+    This function adds them using their last known data
+    NOTE: this only applies to the original author's account (Andrew6rant) and their
+    cache/repository_archive.txt file. Skip / remove this call for a fresh account —
+    see the __main__ block below.
+    """
+    with open('cache/repository_archive.txt', 'r') as f:
+        data = f.readlines()
+        old_data = data
+        data = data[7:len(data)-3] # remove the comment block
+    added_loc, deleted_loc, added_commits = 0, 0, 0
+    contributed_repos = len(data)
+    for line in data:
+        repo_hash, total_commits, my_commits, *loc = line.split()
+        added_loc += int(loc[0])
+        deleted_loc += int(loc[1])
+        if (my_commits.isdigit()): added_commits += int(my_commits)
+    added_commits += int(old_data[-1].split()[4][:-1])
+    return [added_loc, deleted_loc, added_loc - deleted_loc, added_commits, contributed_repos]
 
 def force_close_file(data, cache_comment):
     """
@@ -443,6 +478,10 @@ if __name__ == '__main__':
     repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
     contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
     follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
+
+    # NOTE: the original script has an `if OWNER_ID == {'id': '<Andrew's ID>'}` block here that
+    # adds LOC from his deleted repos via cache/repository_archive.txt. That file and ID are
+    # specific to his account — do not copy it. Removed entirely for a fresh account.
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
 
